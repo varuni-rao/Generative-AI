@@ -1,0 +1,12 @@
+runtime: python39  # Specify the Python version you're using
+
+handlers:
+  - url: /static
+    static_dir: static  # Serve static files from the "static" directory
+
+  - url: /.*
+    script: auto  # Route all other requests to your main Python script (usually app.py)
+
+env_variables:
+  DEEPGRAM_API_KEY: b3f433bf98b0d5d1f5f77f246638b04843a3f115  # DEEPGRAM API KEY
+  OPENAI_API_KEY: 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 # OPENAI API KEY
