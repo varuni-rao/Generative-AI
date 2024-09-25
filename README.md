@@ -1,5 +1,4 @@
-![image](https://github.com/user-attachments/assets/d6cb81cd-30f7-42eb-8075-0e4f04a7bf52)
-(Image Source: [What is Generative AI](https://www.21twelveinteractive.com/what-is-generative-ai/))
+[![image](https://github.com/user-attachments/assets/d6cb81cd-30f7-42eb-8075-0e4f04a7bf52)](https://www.21twelveinteractive.com/what-is-generative-ai/)(Image Source: [What is Generative AI](https://www.21twelveinteractive.com/what-is-generative-ai/))
 
 # Generative AI Projects
 This folder is a collection of all Generative AI projects that I work on.
