@@ -1,0 +1,5 @@
+Flask == 3.0.2
+requests
+openai
+deepgram
+gunicorn==20.0.4
