@@ -11,7 +11,7 @@ UPLOAD_FOLDER = 'upload'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 DEEPGRAM_API_URL = "https://api.deepgram.com/v1/listen?model=nova-2&diarize=true&punctuate=true&utterances=true"
-DEEPGRAM_API_KEY = "b3f433bf98b0d5d1f5f77f246638b04843a3f115"
+DEEPGRAM_API_KEY = os.environ.get("DEEPGRAM_API_KEY")
 OPENAI_API_URL = "https://api.openai.com/v1/engines/davinci/sentiment"
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY") 
 
@@ -64,7 +64,7 @@ def transcribe_audio(filename):
         return f"Error: {response.status_code} - {response.content.decode('utf-8')}"
 
 def analyze_sentiment(transcription):
-   openai.api_key = ("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")
+   openai.api_key = (OPENAI_API_KEY)
 
    messages = [
             {"role": "system", "content": "You are an AI language model trained to analyze and detect the sentiment of conversations."},
@@ -87,7 +87,7 @@ def analyze_sentiment(transcription):
 
 def extract_insights(transcription):
    # Generate insights about speakers based on sentiment results
-   openai.api_key = ("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")
+   openai.api_key = (OPENAI_API_KEY)
 
    messages = [
             {"role": "system", "content": "You are an AI language model trained to generate useful insights from conversations."},
