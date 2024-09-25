@@ -7,6 +7,8 @@ In this project I am required create a scalable app that is hosted on a server w
 ## Project link: 
 https://speech-sentiment-analyzer.ue.r.appspot.com
 
+Note to a potential employer: This site is not live right now. I will pay and make it online when a potential job opportunity is available to me.
+
 ## How I aproached the project: 
 I decided to develop the app locally and then deploy it to the cloud services. I decided to go with Google App Engine due to its scalability and easy no-code approach to setup. I first split the project into 4 steps. 
 1) First, I created the html pages for uploading the audio file, for displaying the results and a third one for error handling. Next, I ensured that I was able to successfully upload the audio file to an upload folder
